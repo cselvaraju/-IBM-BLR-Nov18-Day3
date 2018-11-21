@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserlistComponent } from './components/userlist/userlist.component';
 import { ObservableuserComponent } from './components/observableuser/observableuser.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PostsComponent } from './components/posts/posts.component';
     TestObservableComponent,
     UserlistComponent,
     ObservableuserComponent,
-    PostsComponent
+    PostsComponent,
+    HomeComponent
 
   ],
   imports: [

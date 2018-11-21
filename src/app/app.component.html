@@ -2,5 +2,26 @@
   <h3>Angular - Day 3</h3>
   <!-- <app-pipedemo></app-pipedemo> -->
   <!-- <app-parent></app-parent> -->
-  <app-test-observable></app-test-observable>
+  <!-- <app-test-observable></app-test-observable> -->
+  <!-- <app-posts></app-posts> -->
+
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/parentchild" routerLinkActive="active">Parent Child Demo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/users" routerLinkActive="active">User List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/posts" routerLinkActive="active">Posts List</a>
+    </li>
+  </ul>
+
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
