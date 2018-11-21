@@ -1,0 +1,31 @@
+<div>
+  <h4>Parent Component</h4>
+  Parent count is: {{ parentCount }} 
+  <button class="btn btn-primary" (click)="incrementCount()">
+    <i class="fa fa-plus"></i>
+  </button>
+  &nbsp;
+  <button class="btn btn-primary" (click)="decrementCount()">
+    <i class="fa fa-minus"></i>
+  </button>
+  <p></p>
+  Favourite Actor 
+  <input type="text" [(ngModel)]="actor">
+  <button class="btn btn-secondary" (click)="sendActorData()">
+    Send Data To child
+  </button>
+  <p></p>
+  Favourite Country 
+  <input type="text" #country>
+  <button class="btn btn-secondary" 
+          (click)="sendCountry(country.value)">
+    Send Favourite Country To child
+  </button>
+  <p></p>
+  Child's Favourite Dish: {{ childFavDish }}
+
+  <app-child dataFromParent="{{parentCount}}"
+             favActor="{{favActor}}"
+             favCountry="{{favCountry}}"
+             (dishEvent)="getFavDish($event)"></app-child>
+</div>

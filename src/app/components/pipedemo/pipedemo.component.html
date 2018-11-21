@@ -1,0 +1,10 @@
+<div>
+  <label>Enter some text: </label>
+  <input type="text" [(ngModel)]="myText" />
+  <p></p>
+  Original text: {{ myText }}
+  <p></p>
+  Reversed text: {{ myText | reversetext }}
+  <p></p>
+  Piglatin text: {{ myText | piglatin }}
+<div>

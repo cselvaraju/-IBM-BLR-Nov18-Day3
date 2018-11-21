@@ -1,0 +1,15 @@
+<div>
+  <h4>Child Component</h4>
+  The parent count received: {{ dataFromParent }}
+  <p></p>
+  Favourite actor is: {{ favActor }}
+  <p></p>
+  Parent's favourite country is : {{ favCountry }}
+  <p></p>
+  <label>Favourite Dish: </label>
+  <input type="text" #dish />
+  <button class="btn btn-secondary"
+          (click)="sendDish(dish.value)">
+    Send dish to parent
+  </button>
+</div>
