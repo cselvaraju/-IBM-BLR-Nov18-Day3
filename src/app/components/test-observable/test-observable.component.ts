@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { ObservableService } from '../../services/observable.service';
-import { Observable } from '../../../../node_modules/rxjs';
 
 @Component({
   selector: 'app-test-observable',
